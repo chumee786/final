@@ -18,33 +18,99 @@
         font-style: normal;
       }
       
+      html {
+        font-size: 16px;
+      }
+      
       body {
         background-color: #F5EAD4;
         width: 1440px;
+        margin: 0;
+        font-family: "DM Sans";
       }
       
       #main-container {
         width: 1200px;
-        margin: 120px;
-        background-color: blue;
+        margin: 60 auto;
+        position: relative;
       }
       
-      #nav {
-        
+      #topbar {
+        width: 100%;
+        height: 60px;
+        border: 4px solid #2A292A;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+      
+      #sidebar {
+        position: fixed;
+        top: 0;
+        width: 200px;
+        flex-direction: column;
+        align-items: left;
+        padding-top: 180px;
+        gap: 75px;
+        display: flex;
+      }
+      
+      #sidebar img {
+        width: 110px;
+        height: auto;
+        display: block;
+      }
+      
+      #main {
+        width: 84%;
+        padding-top: 120px;
+        padding-left: 200px;
+        margin-right: 120px;
+        background: blue;
+      }
+      
+      .textblock {
+        margin: 253px 0;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #id-card {
+        width: 99%;
+        height: 405px;
+        border: 4px solid #2A292A;
+        border-radius: 10px;
+        background: red;
+      }
+      
+      h1 {
+        font-size: 2.25em;
+      }
+      
+      h2 {
+        font-size: 1.5em;
       }
       
     </style>
   </head>
   <body>
-    <div id="nav">
-      <img src="house.png" alt="house icon">
-      <img src="folder.png" alt="folder">
-      <img src="vinyl.png" alt="vinyl">
-    </div>
     <div id="main-container">
-      <p>
-        hi
-      </p>
+      <div id="topbar"> </div>
+      <div id="sidebar">
+        <img src="house.png" alt="house icon">
+        <img src="folder.png" alt="folder">
+        <img src="vinyl.png" alt="vinyl">
+      </div>
+      <div id="main">
+        <div class="textblock">
+           <h2>Hello! Welcome to</h2>
+          <h1>
+            Grace's Collections of Things
+          </h1>
+        </div>
+        <div id="id-card">
+          
+        </div>
+      </div>
     </div>
   </body>
 </html>
