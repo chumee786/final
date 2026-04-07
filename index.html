@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Welcome to my World</title>
     
-    
     <!-- font: dm sans --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,6 +87,22 @@
         display: block;
       }
       
+      .id-info {
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+      }
+      
+      .info-group {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      p {
+        font-size: 1em;
+      }
+      
       h1 {
         font-size: 2.25em;
       }
@@ -137,7 +152,18 @@
           <img src="character.png" alt="me">
           <div class="id-info">
             <div class="infogroup">
-              
+              <p>Name</p>
+              <h2>Grace Liang</h2>
+            </div>
+            
+            <div class="infogroup">
+              <p>Height</p>
+              <h2>160cm</h2>
+            </div>
+            
+            <div class="infogroup">
+              <p>Birthday</p>
+              <h2>11/17/2006</h2>
             </div>
           </div>
         </div>
