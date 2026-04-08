@@ -10,13 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     
     <style>
-      .dm-sans-<uniquifier> {
-        font-family: "DM Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-      }
-      
       html {
         font-size: 16px;
       }
@@ -24,8 +17,21 @@
       body {
         background-color: #F5EAD4;
         margin: 0;
-        font-family: "DM Sans";
+        font-family: "DM Sans", sans-serif;
         cursor: url('momongacursor2.png'), auto;
+      }
+      
+       
+      p {
+        font-size: 1em;
+      }
+      
+      h1 {
+        font-size: 2.25em;
+      }
+      
+      h2 {
+        font-size: 1.5em;
       }
       
       #main-container {
@@ -47,15 +53,10 @@
         top: 0;
         width: 200px;
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start;
         padding-top: 180px;
         gap: 75px;
         display: flex;
-      }
-      
-      #sidebar img {
-        width: 110px;
-        height: auto;
       }
       
       #main {
@@ -90,39 +91,27 @@
         gap: 80px;
       }
       
-      #id-card img {
-        padding: 30px 40px;
-        display: block;
-      }
-      
       .id-info {
-        display:flex;
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
         padding-top: 20px;
+        margin-bottom: 50px;
       }
       
       .info-group {
         display: flex;
         flex-direction: column;
+        gap: 0px;
       }
       
-      p {
-        font-size: 1em;
-      }
-      
-      h1 {
-        font-size: 2.25em;
-      }
-      
-      h2 {
-        font-size: 1.5em;
+      .info-group p {
+        margin-bottom: 0px;
       }
       
       .grid {
         display: grid;
-	      grid-template-columns:
-    	  50% 50%;
+	        grid-template-columns: 50% 50%;
         width: 100%;
         gap: 40px;
         margin-top: 50px;
@@ -133,7 +122,17 @@
       }
       
       .grid img {
-        width: 100%
+        width: 100%;
+      }
+      
+      #sidebar img {
+        width: 110px;
+        height: auto;
+      }
+      
+      #id-card img {
+        padding: 30px 40px;
+        display: block;
       }
       
     </style>
@@ -158,8 +157,7 @@
           Come see my portfolio!
           </a>
 
-          <a href="mailto:g32liang@uwaterloo.ca" 
-             target="_blank" style="text-decoration: none;">
+          <a href="mailto:g32liang@uwaterloo.ca" style="text-decoration: none;">
           Or send me an email!
           </a>
         </div>
@@ -167,17 +165,17 @@
         <div id="id-card">
           <img src="character.png" alt="me">
           <div class="id-info">
-            <div class="infogroup">
+            <div class="info-group">
               <p>Name</p>
               <h2>Grace Liang</h2>
             </div>
             
-            <div class="infogroup">
+            <div class="info-group">
               <p>Height</p>
               <h2>160cm</h2>
             </div>
             
-            <div class="infogroup">
+            <div class="info-group">
               <p>Birthday</p>
               <h2>11/17/2006</h2>
             </div>
